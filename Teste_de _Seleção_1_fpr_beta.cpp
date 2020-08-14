@@ -10,21 +10,12 @@ int main() {
  	
  	scanf("%d %d %d %d", &A, &B, &C, &D);
  	
- 	if(A%2 == 0){
- 		printf("A%2 = 0\n");
- 		if(C>0 && D>0){
- 			printf("c>0 && D> 0\n");
- 			if((C + D)> (A + B)){
- 				printf("(C + D)> (A + B)\n");
- 				if(D > A){
- 					printf("D > A\n");	
- 					if(B > A){
- 						printf("B > A");
-					 }
-				 }
-			 }
-		 }
+ 	if((A%2 == 0) && (C>0 && D>0) && ((C + D)> (A + B)) && (D > A) && (B > C)){
+ 		printf("valores aceitos");
 	 }
- 	//lol lol
+	 else {
+	 	printf("valores nao aceitos");
+	 }
+ 
     return 0;
 }
