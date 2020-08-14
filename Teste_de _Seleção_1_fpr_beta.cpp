@@ -25,6 +25,6 @@ int main() {
 			 }
 		 }
 	 }
- 	//lol
+ 	//lol lol
     return 0;
 }
