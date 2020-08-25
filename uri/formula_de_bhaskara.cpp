@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include<math.h>
  /*
  Leia 3 valores de ponto flutuante e efetue o cálculo das raízes da equação de Bhaskara. 
  
@@ -14,21 +15,23 @@ int main() {
     scanf("%lf %lf %lf", &A, &B, &C);
    
  	
- 	delta = ( ((B)*(B)) -4*(A)*(C));
- 	printf("%.5f\n", delta);
+ 	//delta = ( ((B)*(B)) -4*(A)*(C));
+ 	delta = ((pow(B,2)) -4*(A)*(C));
+ 	//printf("%.5f\n", delta);
  	
  	//a = 2, b = 12 e c = –14  delta= 256
  	if((delta>= 0 && A!=0)){
- 		printf("ola");
- 		for(i=0;i<=delta;i++){
+ 		
+ 	/*	for(i=0;i<=delta;i++){
  			
  			if(((i)*(i)) == delta){
  				Raiz_delta= i;
  				i=delta + 1;
  				printf("Raiz_delta:%.5f\n", Raiz_delta);
 			 }
-		 }
+		 }*/
 		 
+		 Raiz_delta = sqrt(delta);
 	
 		 r1= (-(B) +Raiz_delta)/(2*(A));
 		 r2= (-(B)-Raiz_delta)/(2*(A));
