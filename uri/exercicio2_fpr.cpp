@@ -21,37 +21,38 @@ int main (){
 	
 	int mat1[n][n], mat2[n][n], mat3[n][n];
 	
-	for (i=0;i<=n;i++){
+	for (i=0;i<n;i++){
 		
-		for(j=0;j<=n;j++){
+		for(j=0;j<n;j++){
 			mat1[i][j] =rand() % a;
-			//printf("mat1:%4d\n", mat1[i][j]);
+			printf("mat1:%4d\n",mat1[i][j]);
 			mat2[i][j] =rand() % a;
-			//printf("mat2:%4d\n", mat2[i][j]);
+			printf("mat2:%4d\n", mat2[i][j]);
 			mat3[i][j] = mat1[i][j]+mat2[i][j];
-			//printf("mat3:%4d\n", mat3[i][j]);
+			printf("mat3:%4d\n", mat3[i][j]);
 		}
 	}
 	
 	
-	for (i=0;i<=n;i++){
+	for (i=0;i<n;i++){
 		
-		for(j=0;j<=n;j++){
-			printf("%4d", mat1[i][j]);
+		for(j=0;j<n;j++){
+			printf("%4d",mat1[i][j]);
 		}
 		printf("\n");
 	}	printf("\n");
-	for (i=0;i<=n;i++){
+	
+	for (i=0;i<n;i++){
 		
-		for(j=0;j<=n;j++){
+		for(j=0;j<n;j++){
 			printf("%4d", mat2[i][j]);
 		}
 		printf("\n");
 	}	printf("\n");
 
-	for (i=0;i<=n;i++){
+	for (i=0;i<n;i++){
 		
-		for(j=0;j<=n;j++){
+		for(j=0;j<n;j++){
 			printf("%4d", mat3[i][j]);
 		}
 		printf("\n");
