@@ -14,16 +14,12 @@ void ler_arquivo(){
 	//printf("ola mundo");
 	int i, n, a;
 	FILE *arq;
-	arq = fopen("arquivo_2.dat", "r");
+	arq = fopen("arquivo_3.dat", "r");
 	fscanf(arq, "%d %d", &n, &a);
 	int Vet[n];
 	//printf("ola mundo");
 	for(i=0;i<n;i++){
-		fscanf(arq,"%d ", Vet[i]);//não esquecer de usar o & no vet
-	}
-	printf("a: %d n: %d", a, n);
-	for(i=0;i<n;i++){
-		printf("%d ", Vet[i]);
+		fscanf(arq,"%d ", &Vet[i]);//não esquecer de usar o & no vet
 	}
 	fclose(arq);
 	//printf("ola mundo");
